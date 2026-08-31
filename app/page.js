@@ -188,7 +188,7 @@ function SiteCard({ entry }) {
 export default function Home() {
   const { sites, summaries } = getDashboardData(testSites);
   const scrapedCount = sites.filter((s) => s.stages.scrape.state !== "not-run").length;
-  const phaseLabel = scrapedCount === 0 ? "Phase 0" : "Phases 0–4";
+  const phaseLabel = scrapedCount === 0 ? "Phase 0" : "";
 
   return (
     <main style={{ maxWidth: 860, margin: "60px auto 100px", padding: "0 20px" }}>
@@ -197,7 +197,7 @@ export default function Home() {
       </p>
       <h1 style={{ fontSize: 28, marginBottom: 4 }}>Website Audit → Pitch Generator</h1>
       <p style={{ color: "#5b6168", marginBottom: 28, maxWidth: 620 }}>
-        {phaseLabel} wired into this dashboard. Each site below shows the real, on-disk output of every
+        {phaseLabel}Each site below shows the real, on-disk output of every
         agent that has run against it — expand a site to see its screenshot, raw critique claims, and
         the Verifier's accept/reject decision for each one.
       </p>
