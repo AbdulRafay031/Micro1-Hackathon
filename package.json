@@ -1,0 +1,30 @@
+{
+  "name": "bit-website-audit-agent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "micro1 Agentic Workflows Hackathon — Live Website Audit to Personalized Outreach Pitch Generator (BIT)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "baseline": "node scripts/baseline.js",
+    "scrape": "node scripts/scrape.js",
+    "critique": "node scripts/critique.js",
+    "verify": "node scripts/verify.js",
+    "pitch": "node scripts/pitch.js",
+    "evaluate": "node scripts/evaluate.js",
+    "playwright:install": "playwright install --with-deps chromium"
+  },
+  "dependencies": {
+    "next": "14.2.15",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "@google/genai": "^2.19.0",
+    "playwright": "^1.48.0",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}

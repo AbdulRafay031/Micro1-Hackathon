@@ -1,0 +1,80 @@
+{
+  "_meta": {
+    "purpose": "Fixed test set for the micro1 Agentic Workflows Hackathon submission. The exact same 10 sites must be used for the baseline (Phase 1), the full agent pipeline (Phases 2-5), and the evaluation (Phase 6) so the comparison is fair and reproducible.",
+    "source": "All 10 businesses were identified via public web search on 2026-08-30. Each is a real, independently or locally operated small business with its own public website (no login walls, no private data). This mirrors BIT's actual outreach target profile: salons, boutiques, clothing stores, and smoke shops in Tyler, TX and Canton, OH.",
+    "do_not_modify": "This list must stay fixed once Phase 1 (baseline) is run. If a site goes offline mid-hackathon, log it as a known issue in the changelog rather than silently swapping it out.",
+    "challenging_case": "site_09 (OnlyClouds Smoke Shop) is flagged as the deliberately difficult case referenced in the hackathon brief — it is a multi-location chain site rather than a single-location small business, which may make the Critique Agent's issues less clear-cut than a simple outdated single-page site. Confirm this is still the right pick after Phase 2 scraping, and swap the flag to a different site if a better challenging case appears in the data."
+  },
+  "sites": [
+    {
+      "id": "site_01",
+      "name": "KC Salon And Spa",
+      "url": "https://www.kcsalonandspacantonohio.com/",
+      "category": "salon",
+      "location": "Canton, OH"
+    },
+    {
+      "id": "site_02",
+      "name": "Clover House Salon",
+      "url": "https://www.cloverhousesalon.com/",
+      "category": "salon",
+      "location": "Canton, OH"
+    },
+    {
+      "id": "site_03",
+      "name": "Scott Talbot Salonspa",
+      "url": "https://www.scotttalbotsalonspa.com/",
+      "category": "salon",
+      "location": "Canton, OH"
+    },
+    {
+      "id": "site_04",
+      "name": "Shine Salon & Spa",
+      "url": "https://www.shineoncanton.com/",
+      "category": "salon",
+      "location": "Canton, OH"
+    },
+    {
+      "id": "site_05",
+      "name": "Bombshell Hair Studio",
+      "url": "https://www.bombshellsaloncanton.com/",
+      "category": "salon",
+      "location": "Canton, OH"
+    },
+    {
+      "id": "site_06",
+      "name": "Spinout Boutique",
+      "url": "https://shopspinout.com/",
+      "category": "boutique",
+      "location": "Tyler, TX"
+    },
+    {
+      "id": "site_07",
+      "name": "Threads by Sally Boutique",
+      "url": "https://threadsbysallyboutique.com/",
+      "category": "boutique",
+      "location": "Tyler, TX"
+    },
+    {
+      "id": "site_08",
+      "name": "Apricot Lane Boutique (Tyler)",
+      "url": "https://apricotlaneboutique.com/store/tyler/",
+      "category": "boutique",
+      "location": "Tyler, TX"
+    },
+    {
+      "id": "site_09",
+      "name": "OnlyClouds Smoke Shop (Tyler location)",
+      "url": "https://www.onlycloudssmokeshop.com/",
+      "category": "smoke shop",
+      "location": "Tyler, TX"
+    },
+    {
+      "id": "site_10",
+      "name": "Clothes Mentor Tyler",
+      "url": "https://tylertx.clothesmentor.com/",
+      "category": "clothing store",
+      "location": "Tyler, TX"
+    }
+  ]
+}

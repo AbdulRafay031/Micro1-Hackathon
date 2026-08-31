@@ -1,0 +1,25 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# env files — never commit real credentials
+.env
+.env.local
+.env.*.local
+
+# playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+# run outputs (screenshots, logs) — kept locally, not committed
+# remove this line before final submission if judges need the saved runs in-repo
+data/runs/*
+!data/runs/.gitkeep
+
+# OS/editor
+.DS_Store
+*.log
